@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Invitaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Generador de invitaciones de cumpleaños</h1>
+    <section class="formulario">
+        <h1>Completa los datos para la invitación:</h1>
+        <form id="formulario-invitacion">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" required>
+
+            <label for="temaFiesta">Tema de la fiesta:</label>
+            <select id="temaFiesta" name="temaFiesta" required>
+                <option value="DISFRACES">DISFRACES</option>
+                <option value="SUPERHÉROES">SUPERHÉROES</option>
+                <option value="PIRATAS">PIRATAS</option>
+                <option value="FÚTBOL">FÚTBOL</option>
+            </select>
+
+            <label for="fechaFiesta">Fecha de la fiesta:</label>
+            <input type="date" id="fechaFiesta" name="fechaFiesta" required>
+
+            <label for="horaFiesta">Hora de la fiesta:</label>
+            <input type="time" id="horaFiesta" name="horaFiesta" required>
+
+            <label for="ubicacionFiesta">Ubicación de la fiesta:</label>
+            <input type="text" id="ubicacionFiesta" name="ubicacionFiesta" required>
+
+            <button type="submit">Generar invitación</button>
+        </form>
+    </section>
+    <section class="tarjeta-invitacion">
+        <h2>¡HOLA UN GUSTO SALUDARTE!</h2>
+        <div id="tarjeta">
+            </div>
+    </section>
+    <script src="js.script.js"></script>
+    
+</body>
+</html>
+
+
+
+
